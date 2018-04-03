@@ -27,14 +27,14 @@ The script was tested on PowerShell version 5. It may work on earlier versions, 
 ## Script installation
 
 The installation process is described below:
-1. download stellaris-tech-beeliner.ps1
-2. download latest technology database (expandedTechsXYZ.csv)
-3. place database file together with script file in \database\ sub-folder
-4. press Win + R keys to open "Run" dialog
-5. type "powershell ise" (without quotes) and press Enter
-6. wait until "Windows PowerShell ISE" window will finish loading
-7. press Ctrl + O keys and open script file from saved location
-8. edit the line 20, so it will contain correct path
+1. Download stellaris-tech-beeliner.ps1
+2. Download latest technology database (expandedTechsXYZ.csv)
+3. Place database file together with script file in \database\ sub-folder
+4. Press Win + R keys to open "Run" dialog
+5. Type "powershell ise" (without quotes) and press Enter
+6. Wait until "Windows PowerShell ISE" window will finish loading
+7. Press Ctrl + O keys and open script file from saved location
+8. Edit the line 20, so it will contain correct path
 
 ## Running
 
