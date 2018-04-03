@@ -157,6 +157,8 @@ $blocked_techs = @(
                     )
 ```
 
+This array may be left completely empty.
+
 There is a conflict check for desired and ignored/blocked technologies. The script will show a message in such a case.
 
 ## Setting research alternatives
