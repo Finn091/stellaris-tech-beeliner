@@ -96,7 +96,7 @@ $desired_techs =  @(
                     "tech_colonial_centralization",
                     "tech_synthetic_workers",
                     "tech_sensors_2",
-                    "tech_climate_restoration,"
+                    "tech_climate_restoration",
                     "tech_sapient_ai"
                     )
 ```
