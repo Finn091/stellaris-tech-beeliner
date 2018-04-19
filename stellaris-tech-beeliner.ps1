@@ -120,12 +120,12 @@ $show_allowed = 0
 $me_only_techs = @( "tech_robomodding_m", "tech_probability_theory", "tech_adaptive_combat_algorithms", "tech_singularity_core", "tech_modular_components", "tech_resource_processing_algorithms" )
 #$me_only_techs_full = @( "tech_robomodding_m", "tech_probability_theory", "tech_binary_motivators", "tech_nanite_assemblers", "tech_adaptive_combat_algorithms", "tech_biomechanics", "tech_modular_components", "tech_intelligent_factories", "tech_resource_processing_algorithms" )
 
-# remove tech_colonization_3, tech_genome_mapping if servitor or assimilator
-$me_blocked_techs = @( "tech_global_research_initiative", "tech_hydroponics", "tech_colonization_3", "tech_frontier_health", "tech_genome_mapping", "tech_selected_lineages", "tech_galactic_markets", "tech_galactic_benevolence", "tech_living_state", "tech_collective_self" )
-# remove tech_colonization_3, tech_colonization_4, tech_colonization_5, tech_tomb_world_adaption, tech_genome_mapping, tech_epigenetic_triggers, tech_gene_tailoring, tech_glandular_acclimation, tech_gene_expressions if servitor or assimilator
+# remove tech_colonization_2, tech_genome_mapping if servitor or assimilator
+$me_blocked_techs = @( "tech_global_research_initiative", "tech_hydroponics", "tech_colonization_2", "tech_frontier_health", "tech_genome_mapping", "tech_selected_lineages", "tech_galactic_markets", "tech_galactic_benevolence", "tech_living_state", "tech_collective_self" )
+# remove tech_colonization_2, "tech_colonization_3", tech_colonization_4, tech_colonization_5, tech_tomb_world_adaption, tech_genome_mapping, tech_epigenetic_triggers, tech_gene_tailoring, tech_glandular_acclimation, tech_gene_expressions if servitor or assimilator
 # tech_vitality_boosters, tech_cloning, tech_gene_banks are for assimilator only
 # tech_morphogenetic_field_mastery is not available for both asiimilators and servitors
-#$me_blocked_techs_full = @( "tech_global_research_initiative", "tech_hydroponics", "tech_gene_crops", "tech_nano_vitality_crops", "tech_nutrient_replication", "tech_colonization_3", "tech_colonization_4", "tech_colonization_5", "tech_tomb_world_adaption", "tech_frontier_health", "tech_frontier_hospital", "tech_genome_mapping", "tech_vitality_boosters", "tech_epigenetic_triggers", "tech_cloning", "tech_gene_banks", "tech_gene_seed_purification", "tech_morphogenetic_field_mastery", "tech_gene_tailoring", "tech_glandular_acclimation", "tech_gene_expressions", "tech_selected_lineages", "tech_capacity_boosters", "tech_galactic_markets", "tech_subdermal_stimulation", "tech_galactic_benevolence", "tech_living_state", "tech_collective_self" )
+#$me_blocked_techs_full = @( "tech_global_research_initiative", "tech_hydroponics", "tech_gene_crops", "tech_nano_vitality_crops", "tech_nutrient_replication", "tech_colonization_2", "tech_colonization_3", "tech_colonization_4", "tech_colonization_5", "tech_tomb_world_adaption", "tech_frontier_health", "tech_frontier_hospital", "tech_genome_mapping", "tech_vitality_boosters", "tech_epigenetic_triggers", "tech_cloning", "tech_gene_banks", "tech_gene_seed_purification", "tech_morphogenetic_field_mastery", "tech_gene_tailoring", "tech_glandular_acclimation", "tech_gene_expressions", "tech_selected_lineages", "tech_capacity_boosters", "tech_galactic_markets", "tech_subdermal_stimulation", "tech_galactic_benevolence", "tech_living_state", "tech_collective_self" )
 
 # remove tech_collective_production_methods if machine and not assimilator
 $gestalt_only_techs = @( "tech_positronic_implants", "tech_autonomous_agents", "tech_collective_production_methods" )
@@ -212,7 +212,7 @@ if ($gestalt -eq 1) {
 
         # assimilators and servitors do have some biological stuff
         if ($assimilator -eq 1 -or $servitor -eq 1) {
-            $me_blocked_techs = $me_blocked_techs | Where-Object { $_ –ne "tech_colonization_3" } | Where-Object { $_ –ne "tech_genome_mapping" }
+            $me_blocked_techs = $me_blocked_techs | Where-Object { $_ –ne "tech_colonization_2" } | Where-Object { $_ –ne "tech_genome_mapping" }
             $me_blocked_techs = $me_blocked_techs + @( "tech_morphogenetic_field_mastery")
         }
 

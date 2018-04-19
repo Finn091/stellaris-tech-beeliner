@@ -186,4 +186,4 @@ As script focuses on one technology at the time, the general approach on finding
 3. List the most expensive blocked technologies from step 1, apart from results of the one that is most difficult to get, as forcefully blocked
 4. Try beelining for technology that is most difficult to get
 5. Resolve whatever conflicts may arise
-6. Use edited save file from \extras\ folder to confirm results before trying in normal game
+6. Use "finish_research" console command to test the result in-game
